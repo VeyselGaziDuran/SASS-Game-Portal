@@ -1,4 +1,100 @@
-$primary-color:red;
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Inconsolata:wght@300&display=swap');
+
+
+// font-family: 'Cinzel', serif;
+// font-family: 'Inconsolata', monospace;
+
+/** VERIABLES **/
+
+$primary-font: 'Cinzel', serif;
+$secondary-font: 'Inconsolata', monospace;
+$primary-color: #FF8B00;
+$secondary-color: #27282a;
+$date-color: #CB40CF;
+$comment-color: #a7e325;
+$gray-color: #9f9f9f;
+$light-color: #EFEEE5;
+
+/** GENERAL SETTINGS **/
+
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+}
+
 body{
-    background-color: red;
+    font-family: $secondary-font;
+    color: $gray-color;
+    background-color: $light-color;
+}
+
+.container{
+    max-width: 114rem;
+    margin: 0 auto;
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: $primary-font;
+}
+
+ul{
+    list-style: none;
+}
+
+img{
+    width: 100%;
+}
+
+//** TOP HEADER **//
+
+.top-header{
+    border-bottom: 1px solid $primary-color;
+
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .logo{
+            h1{
+                font-size: 5rem;
+                font-family: $primary-font;
+                color: $primary-color;
+            }
+        }
+
+        .top-social-menu{
+            display: flex;
+
+            li{
+                margin: 0 1rem;
+                padding: 1rem;
+                
+                a{
+                    font-size: 2rem;
+                    transition: all .5s ;
+                }
+
+                &:hover a{
+                    color: $primary-color;
+                }
+            }
+        }
+
+        .login-area{
+            span{
+                display: none;
+            }
+        }
+    }
 }
