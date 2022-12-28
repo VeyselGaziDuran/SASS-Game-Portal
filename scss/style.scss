@@ -31,7 +31,9 @@ body{
 a{
     text-decoration: none;
     text-transform: uppercase;
+    color: $light-color;
     font-family: $primary-font;
+    
 }
 
 ul{
@@ -41,6 +43,8 @@ ul{
 img{
     width: 100%;
 }
+
+
 
 //** TOP HEADER **//
 

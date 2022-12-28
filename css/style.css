@@ -1,5 +1,40 @@
 @import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Inconsolata:wght@300&display=swap");
 /** VERIABLES **/
+/** UTILITIES **/
+.bg-dark {
+  background-color: #27282a;
+}
+.bg-light {
+  background-color: #EFEEE5;
+}
+
+.ml-2 {
+  margin-left: 2rem;
+}
+
+.btn {
+  background-color: #EFEEE5;
+  color: #FF8B00;
+  padding: 1rem 2rem;
+  font-size: 1.6rem;
+  border: none;
+  outline: none;
+  letter-spacing: 2px;
+  transition: all 0.5s;
+}
+.btn:hover {
+  background-color: #FF8B00;
+  color: #EFEEE5;
+}
+.btn-primary {
+  background-color: #FF8B00;
+  color: #EFEEE5;
+}
+.btn-primary:hover {
+  background-color: #EFEEE5;
+  color: #FF8B00;
+}
+
 /** GENERAL SETTINGS **/
 *,
 *::after,
@@ -28,6 +63,7 @@ body {
 a {
   text-decoration: none;
   text-transform: uppercase;
+  color: #EFEEE5;
   font-family: "Cinzel", serif;
 }
 
