@@ -121,7 +121,7 @@ img {
 }
 .nav-header .navbar .navbar-list li .dropdown {
   position: absolute;
-  background-color: rgb(5, 5, 253);
+  background-color: #404144;
   width: 150%;
   left: 50%;
   z-index: 10;
@@ -142,5 +142,23 @@ img {
 .nav-header .navbar .navbar-list a {
   padding: 0 2rem;
   font-size: 1.6rem;
+  letter-spacing: 2px;
+}
+.nav-header .navbar .navbar-list i {
+  color: #EFEEE5;
+  font-size: 1.6rem;
+  margin-right: 1rem;
+}
+.nav-header .navbar .search-area input[type=search], .nav-header .navbar .search-area button[type=submit] {
+  border: none;
+  background-color: transparent;
+  color: #EFEEE5;
+}
+.nav-header .navbar .search-area input[type=search] {
+  border-bottom: 1px solid #FF8B00;
+  padding: 0.5rem;
+}
+.nav-header .navbar .search-area button[type=submit] {
+  margin-left: -5rem;
 }
 /*# sourceMappingURL=style.css.map */
