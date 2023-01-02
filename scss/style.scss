@@ -73,7 +73,7 @@ img{
                 
                 a{
                     font-size: 2rem;
-                    transition: all .5s ;
+                    transition: all 5s ;
                 }
 
                 &:hover a{
@@ -85,6 +85,55 @@ img{
         .login-area{
             span{
                 display: none;
+            }
+        }
+    }
+}
+
+//*********** NAV HEADER **********//
+
+.nav-header{
+    .navbar{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .navbar-list{
+            display: flex;
+
+            li{
+                line-height: 8rem;
+                position: relative;
+                transition: all .5s;
+
+                .dropdown{
+                    position: absolute;
+                    background-color: rgb(5, 5, 253);
+                    width: 150%;
+                    left: 50%;
+                    z-index: 10;
+                    top: 12rem;
+                    transition: all .5s;
+                    opacity: 0;
+
+                    li{
+                        line-height: 4rem;
+                    }
+                }
+
+                &:hover{
+                    background-color: $primary-color;
+
+                    & .dropdown{
+                        opacity: 1;
+                        top: 8rem;
+                    }
+                }
+            }
+
+            a{
+                padding: 0 2rem;
+                font-size: 1.6rem;
             }
         }
     }
