@@ -128,6 +128,7 @@ img {
   top: 12rem;
   transition: all 0.5s;
   opacity: 0;
+  visibility: hidden;
 }
 .nav-header .navbar .navbar-list li .dropdown li {
   line-height: 4rem;
@@ -137,6 +138,7 @@ img {
 }
 .nav-header .navbar .navbar-list li:hover .dropdown {
   opacity: 1;
+  visibility: visible;
   top: 8rem;
 }
 .nav-header .navbar .navbar-list a {
