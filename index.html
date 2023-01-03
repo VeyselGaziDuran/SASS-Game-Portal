@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.default.css">
     <link rel="stylesheet" href="css/style.css">
     <title>V-216 Game</title>
 </head>
@@ -74,7 +76,7 @@
 
     <main role="main">
 
-        <div class="main-slider">
+        <div class="main-slider owl-carousel owl-theme">
 
             <!-- single slide  -->
 
@@ -186,8 +188,25 @@
                 </div>
             </div>
 
+
         </div>
     </main>
     
+
+
+    <script src="js/jquery-3.6.3.slim.js"></script>
+    <script src="js/owl.carousel.js"></script>
+
+    <script>
+        $(document).ready(function(){
+
+           let owl = $(".owl-carousel").owlCarousel({
+            autoplay :false,
+            dots:false,
+            items:1
+           })
+        });
+    </script>
+
 </body>
 </html>
