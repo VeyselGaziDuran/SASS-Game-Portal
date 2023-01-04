@@ -29,3 +29,15 @@ $light-color: #EFEEE5;
         margin-left: 2rem;
     }
 }
+
+.text-light{
+    color: $light-color;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.text-primary{
+    color: $primary-color;
+}
