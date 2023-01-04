@@ -35,6 +35,53 @@
   color: #FF8B00;
 }
 
+.badge {
+  border: none;
+  padding: 0.2rem 2.4rem;
+  font-size: 1.6rem;
+  color: #EFEEE5;
+  background-color: #FF8B00;
+  margin: 5rem;
+  letter-spacing: 0.2rem;
+}
+.badge-tech {
+  background-color: #a7e325;
+}
+.badge-game {
+  background-color: #CB40CF;
+}
+
+@-webkit-keyframes mainani {
+  0% {
+    opacity: 0;
+    transform: translateY(15rem);
+    border-top: 0px solid #FF8B00;
+  }
+  50% {
+    transform: translateY(-10rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    border-top: 2px solid #FF8B00;
+  }
+}
+
+@keyframes mainani {
+  0% {
+    opacity: 0;
+    transform: translateY(15rem);
+    border-top: 0px solid #FF8B00;
+  }
+  50% {
+    transform: translateY(-10rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    border-top: 2px solid #FF8B00;
+  }
+}
 /** GENERAL SETTINGS **/
 *,
 *::after,
@@ -60,12 +107,26 @@ body {
   width: 100%;
 }
 
-h2 {
+h1, h2, h3, h4, h5 {
   font-family: "Cinzel", serif;
+  color: #FF8B00;
+  font-weight: 300;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 7rem;
+}
+
+h2 {
   font-size: 5rem;
   color: #EFEEE5;
-  letter-spacing: 0.5rem;
-  font-weight: 300;
+}
+
+h4 {
+  font-size: 2rem;
+  color: #EFEEE5;
 }
 
 a {
@@ -90,11 +151,6 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-.top-header .container .logo h1 {
-  font-size: 5rem;
-  font-family: "Cinzel", serif;
-  color: #FF8B00;
 }
 .top-header .container .top-social-menu {
   display: flex;
@@ -191,6 +247,8 @@ img {
   border-bottom: 2px solid #FF8B00;
   padding: 10rem 7rem;
   background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+  -webkit-animation: mainani 3s ease-out;
+          animation: mainani 3s ease-out;
 }
 .main-slider .single-slide .slide-overlay .slide-content p {
   font-size: 1.5rem;
@@ -226,4 +284,31 @@ img {
   font-size: 2.5rem;
   font-family: "Cinzel", serif;
   background: transparent;
+}
+
+.latest-news {
+  display: flex;
+  background-color: #FF8B00;
+  height: 8rem;
+  align-items: center;
+}
+.latest-news-title {
+  flex-basis: 25%;
+  text-align: right;
+  padding-right: 2rem;
+}
+.latest-news-content {
+  flex-basis: 75%;
+  background-color: #27282a;
+  height: 100%;
+}
+.latest-news-content .news-ticker {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  line-height: 8rem;
+}
+.latest-news-content .news-ticker p {
+  color: #EFEEE5;
+  font-size: 1.4rem;
 }/*# sourceMappingURL=style.css.map */
