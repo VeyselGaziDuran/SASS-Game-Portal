@@ -303,9 +303,38 @@ img{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: auto;
-        grid-gap: 4rem 8rem;
+        grid-gap: 4rem;
         grid-template-areas: 'item-5 item-5 item-5 item-1'
                              'item-3 item-4 item-2 item-6';
+
+        .recent-game-featured{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .raiting{
+                width: 5rem;
+                height: 5rem;
+                line-height: 5rem;
+                font-size: 2rem;
+            }
+
+            .game-title{
+                font-size: 3rem !important;
+
+            }
+
+            .recent-game-thumbnail{
+                height: 100%;
+                width: 100%;
+
+                img{
+                    height: 100%;
+                    width: 100%;
+                }
+                
+            }
+        }                     
 
         .recent-game{
             width: 100%;
@@ -360,8 +389,9 @@ img{
                 padding: 2rem;
 
                 .game-title{
-                    margin: bottom 2rem;
-
+                    margin: bottom 1.2rem;
+                    font-size: 1.8rem;
+                    letter-spacing: 0.2;
                     a{
                         transition: all .5s;
 
