@@ -200,7 +200,7 @@ img {
 }
 .top-header .container .top-social-menu li a {
   font-size: 2rem;
-  transition: all 5s;
+  transition: all 0.5s;
 }
 .top-header .container .top-social-menu li:hover a {
   color: #FF8B00;
