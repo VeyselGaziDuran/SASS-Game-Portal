@@ -81,6 +81,22 @@
   color: #FF8B00;
 }
 
+.review {
+  padding: 5rem;
+  font-size: 1.3rem;
+  line-height: 1.8;
+  margin-left: 10rem;
+}
+.review-user {
+  display: flex;
+  align-items: center;
+}
+.review-user img {
+  width: 8rem;
+  margin-right: 3rem;
+  border-radius: 50%;
+}
+
 @-webkit-keyframes mainani {
   0% {
     opacity: 0;
@@ -475,4 +491,23 @@ img {
 
 .recent-game-6 {
   grid-area: item-6;
+}
+
+/** LATEST REVIEWED SECTION  **/
+.last-reviewed {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50vh;
+  padding: 0;
+  background-color: #27282a;
+}
+.last-reviewed-detail {
+  flex-basis: 40%;
+}
+.last-reviewed-image {
+  flex-basis: 60%;
+  background-image: linear-gradient(to right bottom, #ff8b00, rgba(255, 139, 0, 0.1)), url(../img/5.jpg);
+  background-size: cover;
+  height: 100%;
 }/*# sourceMappingURL=style.css.map */

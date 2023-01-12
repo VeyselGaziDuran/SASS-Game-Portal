@@ -450,3 +450,26 @@ img{
 .recent-game-6{
     grid-area: item-6;
 }
+
+/** LATEST REVIEWED SECTION  **/
+
+.last-reviewed{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50vh;
+    padding: 0;
+    background-color: $secondary-color;
+
+    &-detail{
+        flex-basis: 40%;
+    }
+
+    &-image{
+        flex-basis: 60%;
+        background-image:linear-gradient(to right bottom, rgba($primary-color, 1), rgba($primary-color, .1)), url(../img/5.jpg);
+        
+        background-size: cover;
+        height: 100%;
+    }
+}
