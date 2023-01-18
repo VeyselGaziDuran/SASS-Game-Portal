@@ -241,6 +241,10 @@ body {
   background-color: #EFEEE5;
 }
 
+main {
+  overflow: hidden;
+}
+
 .container {
   max-width: 114rem;
   margin: 0 auto;
@@ -265,24 +269,18 @@ h1 {
 }
 @media (max-width: 992px) {
   h1 {
-    color: green;
     font-size: 5rem;
-  }
-}
-@media (max-width: 768px) {
-  h1 {
-    color: blue;
-  }
-}
-@media (max-width: 576px) {
-  h1 {
-    color: yellow;
   }
 }
 
 h2 {
   font-size: 5rem;
   color: #EFEEE5;
+}
+@media (max-width: 992px) {
+  h2 {
+    font-size: 3.6rem;
+  }
 }
 
 h3 {
@@ -514,8 +512,29 @@ img {
   -webkit-animation: mainani 3s ease-out;
           animation: mainani 3s ease-out;
 }
+@media (max-width: 992px) {
+  .main-slider .single-slide .slide-overlay .slide-content {
+    width: 100%;
+    padding: 6rem 4rem;
+  }
+}
+@media (max-width: 768px) {
+  .main-slider .single-slide .slide-overlay .slide-content {
+    padding: 3rem 2rem;
+  }
+}
+@media (max-width: 576px) {
+  .main-slider .single-slide .slide-overlay .slide-content {
+    padding: 2rem 1rem;
+  }
+}
 .main-slider .single-slide .slide-overlay .slide-content p {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
+}
+@media (max-width: 768px) {
+  .main-slider .single-slide .slide-overlay .slide-content p {
+    font-size: 1.2rem;
+  }
 }
 
 .owl-theme {
@@ -527,6 +546,21 @@ img {
   right: 10%;
   z-index: 5;
   display: flex;
+}
+@media (max-width: 992px) {
+  .owl-theme .owl-dots {
+    top: 2rem;
+  }
+}
+@media (max-width: 768px) {
+  .owl-theme .owl-dots {
+    top: 1rem;
+  }
+}
+@media (max-width: 576px) {
+  .owl-theme .owl-dots {
+    top: 5rem;
+  }
 }
 .owl-theme .owl-dots .owl-dot {
   display: inline-block;
@@ -556,6 +590,11 @@ img {
   height: 8rem;
   align-items: center;
 }
+@media (max-width: 768px) {
+  .latest-news {
+    flex-direction: column;
+  }
+}
 .latest-news-title {
   flex-basis: 25%;
   text-align: right;
@@ -571,6 +610,11 @@ img {
   align-items: center;
   justify-content: space-between;
   line-height: 8rem;
+}
+@media (max-width: 768px) {
+  .latest-news-content .news-ticker {
+    line-height: 4rem;
+  }
 }
 .latest-news-content .news-ticker p {
   color: #EFEEE5;

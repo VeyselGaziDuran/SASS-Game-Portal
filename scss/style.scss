@@ -23,6 +23,10 @@ body{
     background-color: $light-color;
 }
 
+main{
+    overflow: hidden;
+}
+
 .container{
     max-width: 114rem;
     margin: 0 auto;
@@ -46,22 +50,18 @@ h1{
     font-size: 7rem;
 
     @include media(large){
-        color: green;
         font-size: 5rem;
     }
 
-    @include media(medium){
-        color: blue;
-    }
-
-    @include media(small){
-        color: yellow;
-    }
 }
 
 h2{
     font-size: 5rem;
     color: $light-color;
+
+    @include media(large){
+        font-size: 3.6rem;
+    }
 }
 
 h3{
@@ -321,8 +321,26 @@ img{
                 background: linear-gradient( to right, (rgb(0, 0, 0, .6),rgb(0, 0, 0, .6)));
                 animation: mainani 3s ease-out;
 
+
+                @include media(large){
+                    width: 100%;
+                    padding: 6rem 4rem;
+                }
+
+                @include media(medium){
+                    padding: 3rem 2rem;
+                }
+
+                @include media(small){
+                    padding: 2rem 1rem;
+                }
+
                 p{
-                    font-size: 1.5rem;
+                    font-size: 1.4rem;
+
+                    @include media(medium){
+                        font-size: 1.2rem;
+                    }
                 }
             }
         }
@@ -340,6 +358,18 @@ img{
         right: 10%;
         z-index: 5;
         display: flex;
+
+        @include media(large){
+            top: 2rem;
+        }
+
+        @include media(medium){
+            top: 1rem;
+        }
+
+        @include media(small){
+            top: 5rem;
+        }
 
         .owl-dot{
             display: inline-block;
@@ -376,6 +406,10 @@ img{
     height: 8rem;
     align-items: center;
 
+    @include media(medium){
+        flex-direction: column;
+    }
+
     &-title{
         flex-basis: 25%;
         text-align: right;
@@ -392,6 +426,10 @@ img{
             align-items: center;
             justify-content: space-between;
             line-height: 8rem;
+
+            @include media(medium){
+                line-height: 4rem;
+            }
 
             p{
                 color: $light-color;
