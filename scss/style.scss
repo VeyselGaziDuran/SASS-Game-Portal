@@ -139,12 +139,26 @@ img{
         align-items: center;
         justify-content: space-between;
 
+        @include media(small){
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
         .top-social-menu{
             display: flex;
+
+            @include media(small){
+                order: 4;
+            }
 
             li{
                 margin: 0 1rem;
                 padding: 1rem;
+
+                @include media(large){
+                    margin: 0 .5rem;
+                    padding: .5rem;
+                }
                 
                 a{
                     font-size: 2rem;
@@ -159,8 +173,21 @@ img{
 
         .login-area{
             span{
-                display: none;
+                display: inline-block;
+
+                @include media(medium){
+                    display: none;
+                }
             }
+
+            i{
+                display: none;
+
+                @include media(medium){
+                    display: inline-block;
+                }
+            }
+            
         }
     }
 }
@@ -171,7 +198,7 @@ img{
 
     @include media(large){
         position: fixed;
-        background-color: rgba($secondary-color, 1);
+        background-color: rgba($secondary-color, .7);
         top: 0;
         width: 50%;
         right: -50%;
@@ -188,8 +215,17 @@ img{
         align-items: center;
         justify-content: space-between;
 
+        @include media (large){
+            flex-direction: column;
+        }
+
         .navbar-list{
             display: flex;
+            @include media (large){
+                flex-direction: column;
+                justify-content: flex-start;
+                width: 100%;
+            }
 
             li{
                 line-height: 8rem;
@@ -237,6 +273,12 @@ img{
         }
 
         .search-area{
+
+            @include media(large){
+                align-self: flex-start;
+                margin-left: 2rem;
+            }
+
             input[type="search"], button[type="submit"]{
                 border: none;
                 background-color: transparent;

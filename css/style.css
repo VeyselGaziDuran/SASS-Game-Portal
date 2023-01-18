@@ -38,6 +38,11 @@
   letter-spacing: 2px;
   transition: all 0.5s;
 }
+@media (max-width: 768px) {
+  .btn {
+    padding: 0.5rem 1rem;
+  }
+}
 .btn:hover {
   background-color: #FF8B00;
   color: #EFEEE5;
@@ -348,12 +353,29 @@ img {
   align-items: center;
   justify-content: space-between;
 }
+@media (max-width: 576px) {
+  .top-header .container {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
 .top-header .container .top-social-menu {
   display: flex;
+}
+@media (max-width: 576px) {
+  .top-header .container .top-social-menu {
+    order: 4;
+  }
 }
 .top-header .container .top-social-menu li {
   margin: 0 1rem;
   padding: 1rem;
+}
+@media (max-width: 992px) {
+  .top-header .container .top-social-menu li {
+    margin: 0 0.5rem;
+    padding: 0.5rem;
+  }
 }
 .top-header .container .top-social-menu li a {
   font-size: 2rem;
@@ -363,13 +385,26 @@ img {
   color: #FF8B00;
 }
 .top-header .container .login-area span {
+  display: inline-block;
+}
+@media (max-width: 768px) {
+  .top-header .container .login-area span {
+    display: none;
+  }
+}
+.top-header .container .login-area i {
   display: none;
+}
+@media (max-width: 768px) {
+  .top-header .container .login-area i {
+    display: inline-block;
+  }
 }
 
 @media (max-width: 992px) {
   .nav-header {
     position: fixed;
-    background-color: #27282a;
+    background-color: rgba(39, 40, 42, 0.7);
     top: 0;
     width: 50%;
     right: -50%;
@@ -386,8 +421,20 @@ img {
   align-items: center;
   justify-content: space-between;
 }
+@media (max-width: 992px) {
+  .nav-header .navbar {
+    flex-direction: column;
+  }
+}
 .nav-header .navbar .navbar-list {
   display: flex;
+}
+@media (max-width: 992px) {
+  .nav-header .navbar .navbar-list {
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+  }
 }
 .nav-header .navbar .navbar-list li {
   line-height: 8rem;
@@ -425,6 +472,12 @@ img {
   color: #EFEEE5;
   font-size: 1.6rem;
   margin-right: 1rem;
+}
+@media (max-width: 992px) {
+  .nav-header .navbar .search-area {
+    align-self: flex-start;
+    margin-left: 2rem;
+  }
 }
 .nav-header .navbar .search-area input[type=search], .nav-header .navbar .search-area button[type=submit] {
   border: none;
