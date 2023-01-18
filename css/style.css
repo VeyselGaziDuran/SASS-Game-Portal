@@ -254,6 +254,16 @@ main {
 section {
   padding: 8rem 0;
 }
+@media (max-width: 768px) {
+  section {
+    padding: 4rem 0;
+  }
+}
+@media (max-width: 576px) {
+  section {
+    padding: 2rem 0;
+  }
+}
 
 h1, h2, h3, h4, h5 {
   font-family: "Cinzel", serif;
@@ -631,10 +641,51 @@ img {
   grid-gap: 4rem;
   grid-template-areas: "item-5 item-5 item-5 item-1" "item-3 item-4 item-2 item-6";
 }
+.recent-games-content .recent-game-1 {
+  grid-area: item-1;
+}
+.recent-games-content .recent-game-2 {
+  grid-area: item-2;
+}
+.recent-games-content .recent-game-3 {
+  grid-area: item-3;
+}
+.recent-games-content .recent-game-4 {
+  grid-area: item-4;
+}
+.recent-games-content .recent-game-5 {
+  grid-area: item-5;
+}
+.recent-games-content .recent-game-6 {
+  grid-area: item-6;
+}
+@media (max-width: 992px) {
+  .recent-games-content {
+    grid-row-gap: 2rem;
+    grid-column-gap: 2rem;
+  }
+}
+@media (max-width: 768px) {
+  .recent-games-content {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "item-5 item-5 item-5" "item-3 item-4 item-2" "item-1 item-6 item-6";
+  }
+}
+@media (max-width: 576px) {
+  .recent-games-content {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "item-5 item-5 " "item-4 item-3 " "item-6 item-2 " "item-1 item-1 ";
+  }
+}
 .recent-games-content .recent-game-featured {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+@media (max-width: 576px) {
+  .recent-games-content .recent-game-featured {
+    flex-direction: column;
+  }
 }
 .recent-games-content .recent-game-featured .raiting {
   width: 5rem;
@@ -720,30 +771,6 @@ img {
 .recent-games-content .recent-game-content p {
   font-size: 1.4rem;
   line-height: 1.8rem;
-}
-
-.recent-game-1 {
-  grid-area: item-1;
-}
-
-.recent-game-2 {
-  grid-area: item-2;
-}
-
-.recent-game-3 {
-  grid-area: item-3;
-}
-
-.recent-game-4 {
-  grid-area: item-4;
-}
-
-.recent-game-5 {
-  grid-area: item-5;
-}
-
-.recent-game-6 {
-  grid-area: item-6;
 }
 
 /** LATEST REVIEWED SECTION  **/

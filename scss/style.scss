@@ -35,6 +35,14 @@ main{
 
 section{
     padding: 8rem 0;
+
+    @include media(medium){
+        padding: 4rem 0;
+    }
+
+    @include media(small){
+        padding: 2rem 0;
+    }
 }
 
 h1,h2,h3,h4,h5{
@@ -452,10 +460,57 @@ img{
         grid-template-areas: 'item-5 item-5 item-5 item-1'
                              'item-3 item-4 item-2 item-6';
 
+                             
+.recent-game-1{
+    grid-area: item-1;
+}
+
+.recent-game-2{
+    grid-area: item-2;
+}
+
+.recent-game-3{
+    grid-area: item-3;
+}
+
+.recent-game-4{
+    grid-area: item-4;
+}
+
+.recent-game-5{
+    grid-area: item-5;
+}
+
+.recent-game-6{
+    grid-area: item-6;
+}
+
+@include media(large){
+    grid-row-gap: 2rem;
+    grid-column-gap: 2rem; 
+}
+
+@include media(medium){
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 'item-5 item-5 item-5'
+                         'item-3 item-4 item-2'
+                         'item-1 item-6 item-6';}
+
+@include media(small){
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 'item-5 item-5 '
+                         'item-4 item-3 '
+                         'item-6 item-2 '
+                         'item-1 item-1 ';}                         
+
         .recent-game-featured{
             display: flex;
             align-items: center;
             justify-content: space-between;
+
+            @include media(small){
+                flex-direction: column;
+            }
 
             .raiting{
                 width: 5rem;
@@ -570,30 +625,6 @@ img{
         }            
 
     }
-}
-
-.recent-game-1{
-    grid-area: item-1;
-}
-
-.recent-game-2{
-    grid-area: item-2;
-}
-
-.recent-game-3{
-    grid-area: item-3;
-}
-
-.recent-game-4{
-    grid-area: item-4;
-}
-
-.recent-game-5{
-    grid-area: item-5;
-}
-
-.recent-game-6{
-    grid-area: item-6;
 }
 
 /** LATEST REVIEWED SECTION  **/
