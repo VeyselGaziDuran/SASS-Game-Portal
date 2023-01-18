@@ -780,3 +780,58 @@ img{
         }
     }
 }
+
+// FOOTER SECTION //
+
+footer{
+    background-color: $secondary-color;
+    height: 6rem;
+    font-family: $primary-font;
+
+    .container{
+        display: flex;
+        align-items: center;
+        height: 100%;
+
+        .copyright{
+            flex: 1;
+            height: 100%;
+
+            p{
+                line-height: 6rem;
+                font-size: 2.4rem;
+            }
+        }
+
+        .down-cocial-link{
+            flex: 1;
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+
+            .fc, .yt, .tw{
+                line-height: 6rem;
+                height: 100%;
+                text-align: center;
+                font-size: 2.4rem;
+            }
+
+            .fc{
+                background-color: #4b5496;
+                width: 100%;
+            }
+
+            .yt{
+                background-color: #d92424;
+                width: 100%;
+            }
+
+            .tw{
+                background-color: #6799ed;
+                width: 100%;
+            }
+        }
+    }
+}
+
+
