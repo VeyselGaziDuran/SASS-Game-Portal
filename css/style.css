@@ -258,6 +258,22 @@ h1, h2, h3, h4, h5 {
 h1 {
   font-size: 7rem;
 }
+@media (max-width: 992px) {
+  h1 {
+    color: green;
+    font-size: 5rem;
+  }
+}
+@media (max-width: 768px) {
+  h1 {
+    color: blue;
+  }
+}
+@media (max-width: 576px) {
+  h1 {
+    color: yellow;
+  }
+}
 
 h2 {
   font-size: 5rem;
@@ -288,6 +304,42 @@ img {
   width: 100%;
 }
 
+.open-menu, .close-menu {
+  font-size: 3rem;
+  color: #EFEEE5;
+  cursor: pointer;
+  display: none;
+  transition: all 0.5s;
+}
+@media (max-width: 992px) {
+  .open-menu, .close-menu {
+    display: block;
+  }
+}
+
+.open-menu {
+  margin-right: 2rem;
+}
+
+@media (max-width: 992px) {
+  .close-menu {
+    position: absolute;
+    top: 2.5rem;
+    right: 2.3rem;
+  }
+}
+
+.open-menu:hover, .close-menu:hover {
+  color: #FF8B00;
+}
+
+#chek {
+  position: absolute;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+}
+
 .top-header {
   border-bottom: 1px solid #FF8B00;
 }
@@ -314,6 +366,21 @@ img {
   display: none;
 }
 
+@media (max-width: 992px) {
+  .nav-header {
+    position: fixed;
+    background-color: #27282a;
+    top: 0;
+    width: 50%;
+    right: -50%;
+    z-index: 10;
+    height: 100vh;
+    transition: all 0.5s;
+  }
+  .nav-header.active {
+    right: 0;
+  }
+}
 .nav-header .navbar {
   display: flex;
   align-items: center;
