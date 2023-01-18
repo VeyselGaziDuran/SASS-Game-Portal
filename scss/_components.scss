@@ -79,8 +79,19 @@
     border-bottom: 1px solid $primary-color;
     transform: skew(-28deg);
 
+    @include media(large){
+        transform: skew(0deg);
+        border: none;
+        margin-left: 0;
+    }
+
     & > *{
         transform: skew(28deg);
+
+        @include media(large){
+            transform: skew(0deg);
+            
+        }
     }
 
     &-tags{
@@ -97,6 +108,10 @@
     &-user{
         display: flex;
         align-items: center;
+
+        @include media(small){
+            flex-direction: column;
+        }
 
         img{
             width: 8rem;
@@ -129,6 +144,14 @@
 
         &-rating{
             margin-left: auto;
+
+            @include media(medium){
+                margin-left: 2rem;
+            }
+
+            @include media(small){
+                margin-left: 0;
+            }
 
             .checked{
                 color: $primary-color;

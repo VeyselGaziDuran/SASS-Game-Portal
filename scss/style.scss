@@ -633,12 +633,26 @@ img{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 50vh;
+    height: 75vh;
     padding: 0;
     background-color: $secondary-color;
 
+    
+
     &-detail{
         flex-basis: 40%;
+
+        @include media(large){
+            flex-basis: 75%;
+        }
+
+        @include media(medium){
+            flex-basis: 100%;
+        }
+
+        @include media(small){
+            text-align: center;
+        }
     }
 
     &-image{
@@ -647,6 +661,16 @@ img{
         background-size: cover;
         height: 100%;
         clip-path: polygon(20% 0, 100% 0, 100% 100%, 0 100%);
+
+        @include media(large){
+            flex-basis: 25%;
+            clip-path: none;
+            background-position: center;
+        }
+
+        @include media(medium){
+            flex-basis: 0%;
+        }
     }
 }
 
