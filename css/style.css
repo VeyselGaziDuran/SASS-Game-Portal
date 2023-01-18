@@ -12,6 +12,10 @@
   margin-left: 2rem;
 }
 
+.m-1 {
+  margin: 1rem;
+}
+
 .text-light {
   color: #EFEEE5;
 }
@@ -131,6 +135,55 @@
 }
 .review-user-rating .checked {
   color: #FF8B00;
+}
+
+.card {
+  height: 56rem;
+  perspective: 1000px;
+}
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+.card .card-front, .card .card-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  transition: all 1s;
+}
+.card .card-front {
+  background-color: #FF8B00;
+}
+.card .card-back {
+  background-color: #27282a;
+  transform: rotateY(180deg);
+  display: table;
+}
+.card .card-back-content {
+  display: table-cell;
+  vertical-align: middle;
+}
+.card .card-back-content p {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+}
+.card .card-back-content a {
+  transform: all 0.5s;
+}
+.card .card-back-content a:hover {
+  color: #FF8B00;
+}
+.card:hover .card-front {
+  transform: rotateY(180deg);
+}
+.card:hover .card-back {
+  transform: none;
 }
 
 @-webkit-keyframes mainani {
@@ -700,4 +753,18 @@ img {
   font-size: 1.2rem;
   opacity: 0;
   transform: translateY(5rem);
+}
+
+.team-members {
+  display: flex;
+}
+.team-members .team-member {
+  width: 100%;
+  height: 100%;
+}
+.team-members .team-member:first-child {
+  margin-right: 5rem;
+}
+.team-members .team-member:last-child {
+  margin-left: 5rem;
 }/*# sourceMappingURL=style.css.map */
