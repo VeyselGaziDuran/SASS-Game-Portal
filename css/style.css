@@ -767,4 +767,95 @@ img {
 }
 .team-members .team-member:last-child {
   margin-left: 5rem;
+}
+
+.contact {
+  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.5) 100%), url("../img/contact.jpg");
+  background-size: cover;
+  min-height: 100vh;
+}
+.contact .contact-contact {
+  display: flex;
+  margin-top: 4rem;
+  align-items: center;
+}
+.contact .contact-contact .contact-detail {
+  display: flex;
+  background-color: rgba(255, 139, 0, 0.8);
+  flex: 1;
+  color: #EFEEE5;
+  min-height: 50%;
+  margin-right: -5rem;
+  z-index: 2;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem;
+  flex-direction: columns;
+}
+.contact .contact-contact .contact-detail h3 {
+  display: flex;
+  color: #EFEEE5;
+  align-items: center;
+  margin: auto;
+}
+.contact .contact-contact .contact-detail ul li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+.contact .contact-contact .contact-detail ul li i {
+  margin-right: 2rem;
+}
+.contact .contact-contact .contact-detail ul li p {
+  font-size: 1.4rem;
+}
+.contact .contact-contact .contact-form {
+  background-color: rgba(39, 40, 42, 0.8);
+  flex: 2;
+  min-height: 50rem;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.contact .contact-contact .contact-form input, .contact .contact-contact .contact-form textarea {
+  width: 50%;
+  padding: 1rem;
+  border: none;
+  text-transform: uppercase;
+  font-family: inherit;
+  font-size: 1.4rem;
+  display: block;
+  color: #EFEEE5;
+}
+.contact .contact-contact .contact-form input:focus, .contact .contact-contact .contact-form textarea:focus {
+  outline: none;
+  border-bottom: 2px solid #EFEEE5;
+}
+.contact .contact-contact .contact-form :not(:last-child) {
+  margin-bottom: 3rem;
+  background-color: transparent;
+  border-bottom: 2px solid #FF8B00;
+}
+.contact .contact-contact .contact-form textarea {
+  resize: none;
+}
+.contact .contact-contact .contact-form input[type=submit] {
+  background-color: #EFEEE5;
+  color: #FF8B00;
+  cursor: pointer;
+}
+.contact .contact-contact .contact-form input[type=submit]:hover {
+  background-color: #FF8B00;
+  color: #EFEEE5;
+}
+.contact .contact-contact .contact-form ::-moz-placeholder {
+  color: #FF8B00;
+}
+.contact .contact-contact .contact-form :-ms-input-placeholder {
+  color: #FF8B00;
+}
+.contact .contact-contact .contact-form ::placeholder {
+  color: #FF8B00;
 }/*# sourceMappingURL=style.css.map */
