@@ -164,8 +164,21 @@
 
 .card{
     
-    height: 56rem;
+    height: 55rem;
     perspective: 1000px;
+
+
+    @include media(large){
+        height: 45rem;
+    }
+
+    @include media(medium){
+        height: 36rem;
+    }
+
+    @include media(small){
+        height: 30rem;
+    }
 
     &-inner{
         position: relative;

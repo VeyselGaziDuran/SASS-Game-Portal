@@ -951,16 +951,43 @@ img{
 .team-members{
     display: flex;
 
+    
+
     .team-member{
         width: 100%;
         height: 100%;
 
         &:first-child{
             margin-right: 5rem;
+
+
+            @include media(large){
+                margin-right: 3rem;
+            }
+
+            @include media(medium){
+                margin-right: 1rem;
+            }
+
+            @include media(small){
+                margin-right: 0;
+            }
         }
 
         &:last-child{
             margin-left: 5rem;
+
+            @include media(large){
+                margin-left: 3rem;
+            }
+
+            @include media(medium){
+                margin-left: 1rem;
+            }
+
+            @include media(small){
+                margin-left: 0;
+            }
         }
     }
 }
@@ -978,6 +1005,10 @@ img{
         margin-top: 4rem;
         align-items: center;
 
+        @include media(medium){
+            flex-direction: column;
+        }
+
         .contact-detail{
             display: flex;
             background-color: rgba($primary-color, .8);
@@ -990,6 +1021,12 @@ img{
             justify-content: center;
             padding: 4rem;
             flex-direction: columns ;
+
+            @include media(medium){
+                width: 90%;
+                min-height: 30rem;
+                margin-right: 0;
+            }
 
             h3{
                 display: flex;
@@ -1025,6 +1062,11 @@ img{
             flex-direction: column;
             align-items: center;
             justify-content: center;
+
+            @include media(medium){
+                width: 90%;
+                min-height: 40rem;
+            }
 
                 input, textarea{
                 width: 50%;
