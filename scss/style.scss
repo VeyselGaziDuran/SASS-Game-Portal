@@ -841,6 +841,16 @@ img{
         display: flex;
         overflow: hidden;
 
+        @include media(xlarge){
+            display: grid;
+            grid-template-columns:repeat(2, 1fr);
+            grid-template-rows: repeat(2,25rem);
+        }
+
+        @include media(medium){
+            grid-template-rows: repeat(2,20rem);
+        }
+
         .showcase-item{
             position: relative;
             text-align: center;
@@ -848,6 +858,10 @@ img{
 
             &:hover{
                 transform: scale(1.2);
+
+                @include media(xlarge){
+                    transform: scale(1);
+                }
                 
 
                 .item-image::before, .item-content h3, .item-content i, .item-content p{
@@ -895,6 +909,10 @@ img{
                     font-size: 1.8rem;
                     opacity: 0;
                     transform: translateY(-5rem);
+
+                    @include media(medium){
+                        font-size: 1.8rem;
+                    }
                 }
 
                 i{
@@ -905,6 +923,11 @@ img{
                     &:hover{
                         color: darken($light-color, 20%);
                     }
+
+                    @include media(medium){
+                        font-size: 4rem;
+                        margin: .5rem;
+                    }
                 }
 
                 p{
@@ -913,6 +936,10 @@ img{
                     font-size: 1.2rem;
                     opacity: 0;
                     transform: translateY(5rem);
+
+                    @include media(medium){
+                        font-size: 1rem;
+                    }
                 }
             }
         }
