@@ -1121,10 +1121,19 @@ footer{
     height: 6rem;
     font-family: $primary-font;
 
+    @include media(medium){
+        height: 4rem;
+    }
+
     .container{
         display: flex;
         align-items: center;
         height: 100%;
+
+        @include media(medium){
+            flex-direction: column-reverse;
+            
+        }
 
         .copyright{
             flex: 1;
@@ -1133,6 +1142,11 @@ footer{
             p{
                 line-height: 6rem;
                 font-size: 2.4rem;
+
+                @include media(medium){
+                    line-height: 4rem;
+                    font-size: 1.8rem;
+                }
             }
         }
 
@@ -1147,21 +1161,38 @@ footer{
                 height: 100%;
                 text-align: center;
                 font-size: 2.4rem;
+
+                @include media(medium){
+                    line-height: 4rem;
+                    font-size: 1.8rem;
+                }
             }
 
             .fc{
                 background-color: #4b5496;
                 width: 100%;
+
+                @include media(medium){
+                    width: 8rem;
+                }
             }
 
             .yt{
                 background-color: #d92424;
                 width: 100%;
+
+                @include media(medium){
+                    width: 8rem;
+                }
             }
 
             .tw{
                 background-color: #6799ed;
                 width: 100%;
+
+                @include media(medium){
+                    width: 8rem;
+                }
             }
         }
     }

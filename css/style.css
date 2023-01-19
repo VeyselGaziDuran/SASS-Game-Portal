@@ -1284,10 +1284,20 @@ footer {
   height: 6rem;
   font-family: "Cinzel", serif;
 }
+@media (max-width: 768px) {
+  footer {
+    height: 4rem;
+  }
+}
 footer .container {
   display: flex;
   align-items: center;
   height: 100%;
+}
+@media (max-width: 768px) {
+  footer .container {
+    flex-direction: column-reverse;
+  }
 }
 footer .container .copyright {
   flex: 1;
@@ -1296,6 +1306,12 @@ footer .container .copyright {
 footer .container .copyright p {
   line-height: 6rem;
   font-size: 2.4rem;
+}
+@media (max-width: 768px) {
+  footer .container .copyright p {
+    line-height: 4rem;
+    font-size: 1.8rem;
+  }
 }
 footer .container .down-cocial-link {
   flex: 1;
@@ -1309,15 +1325,36 @@ footer .container .down-cocial-link .fc, footer .container .down-cocial-link .yt
   text-align: center;
   font-size: 2.4rem;
 }
+@media (max-width: 768px) {
+  footer .container .down-cocial-link .fc, footer .container .down-cocial-link .yt, footer .container .down-cocial-link .tw {
+    line-height: 4rem;
+    font-size: 1.8rem;
+  }
+}
 footer .container .down-cocial-link .fc {
   background-color: #4b5496;
   width: 100%;
+}
+@media (max-width: 768px) {
+  footer .container .down-cocial-link .fc {
+    width: 8rem;
+  }
 }
 footer .container .down-cocial-link .yt {
   background-color: #d92424;
   width: 100%;
 }
+@media (max-width: 768px) {
+  footer .container .down-cocial-link .yt {
+    width: 8rem;
+  }
+}
 footer .container .down-cocial-link .tw {
   background-color: #6799ed;
   width: 100%;
+}
+@media (max-width: 768px) {
+  footer .container .down-cocial-link .tw {
+    width: 8rem;
+  }
 }/*# sourceMappingURL=style.css.map */
